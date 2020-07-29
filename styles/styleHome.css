@@ -1,0 +1,1697 @@
+@charset "utf-8";
+html{overflow-y: scroll;}
+
+*{
+    font-family: Arial;
+    text-decoration: none;
+}
+#container{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    min-height:100%;
+}
+
+section{
+    background: #b9dbf2;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#contenido{
+    width: 70%;
+    height: 100%;
+}
+
+
+/*-------------ASIDE--------------*/
+html{
+    height: 100% !important;
+}
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    background-image:url("../imgFront/backOWN3.png");
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+.usuario{
+    width: 190px;
+    height: 65px;
+    background-color:#1669ab;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ffffff;
+    margin: 0px 10px;
+    align-self: flex-end;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.datosUser, .imgHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgHeader{
+    background-size: cover;
+    overflow: hidden;
+    float: left;
+    margin: 7px 10px 0px 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-position: center;
+}
+
+.fontUser{
+    margin: 2px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#cerrarSesion{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.usuario label:hover{
+text-decoration: underline;
+}
+
+aside {
+    width: 220px;
+    height: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    width: 220px;
+    margin: auto;
+}
+
+aside>img{
+    height: 88px;
+    margin: 15px 0px 25px 0px;
+    
+}
+
+.botimg img{
+    width: 35px;
+    height: 35px;
+    margin: 0px 15px 5px 5px;
+}
+
+.botimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 30px;
+    margin: 10px 10px 10px 10px;
+    padding: 8px 5px 8px 5px;
+    color: #1669ab;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.botimg:hover {
+    background-color: #5EB8FF;
+    transition: all ease 0.1s;
+    color: #ffffff;
+}
+
+.boton{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*----------HOME----------*/
+
+.recuadroTit{
+    margin: 25px 25px 0px 25px;
+    height: 60px;
+    display: flex;
+    border-radius: 150px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: #166AAB;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*----------SOCIAL----------*/
+
+#social{
+    width: 30%;
+    background-color: #1669ab;
+    height: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.titSocial{
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sectionSocial{
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+    font-style: italic;
+    background-color: rgba(255,255,255,0.2);
+    padding: 15px;
+}
+
+.socialPerfilUser{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.socialAvatar{
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+    border: 3px solid #ffffff;
+    z-index: 2;
+}
+
+.socialUserName{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    font-weight: bold;
+    margin: 12px 0px 12px -10px;
+    padding: 12px 30px 8px 25px;
+    border-radius: 0 100px 100px 0;
+}
+
+.socialListUser{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 40px;
+    background-color: rgba(255, 2255, 255, 1);
+    border-radius: 15px;
+    padding: 5px;
+    margin: -12px 10px 0px 35px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.socialImgCat{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    z-index: 4;
+    margin: 2px 0 0 5px;
+}
+
+.socialNomList{
+    padding: 9px 8px 8px 8px;
+    font-weight: 800;
+    font-size: 12px;
+    color: #166AAB;
+}
+
+.socialResUser{
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255,255,255,0.4);
+    margin: -5px 20px 15px 50px;
+    cursor: pointer;
+}
+
+.resSocial{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0px 0 10px -30px;
+    padding: 15px 0 15px 0;
+}
+
+.socialImgRev{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+    z-index: 4;
+    margin: 2px 0 0 5px;
+    border: 2px solid #ffffff;
+}
+
+.socialNomRev{
+    border-radius: 100px;
+    background-color: rgba(255,255,255,1);
+    margin: 2px 0 0px -50px;
+    padding: 18px 20px 18px 60px;
+    color: #1669AB;
+    font-style: italic;
+    font-weight: bold;
+    width: 60%;
+}
+
+/*----------MIS LISTAS----------*/
+
+#misListas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#misListas>label{
+    margin: 25px 25px 0px 25px;
+    height: 80px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 25px;
+    background-color: #166AAB;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.banner{
+    position: relative;
+    background-color: #5EB8FF;
+    width: 90%;
+    height: 200px;
+    margin: 25px auto;
+    background-size: cover;
+    border-radius: 25px;
+    background-position: center;
+}
+
+.infoUsu{
+    position: absolute;
+    margin: 30px 0px 0px 100px;
+    padding: 5px 10px 5px 100px;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10; 
+    height: auto;
+    width: 60%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.username{
+    color: #000000;
+    margin-top: 13px;
+    font-weight: 900;
+    font-size: 30px;
+    z-index: 20;
+}
+
+.bio{
+    font-style: italic;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px 0px 10px 0px;
+    padding: 0 10px 0 0;
+    text-align: justify;
+}
+
+.avatar{
+    position: absolute;
+    margin: 25px;
+    background-size: cover;
+    z-index: 50;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-position: center;
+}
+
+.banner>img{
+    position: absolute;
+    right:0;
+    top: 0;
+    width: 30px;
+    opacity: 0.5;
+    z-index: 50;
+    margin:10px;
+    cursor: pointer;
+}
+
+.banner>img:hover{
+    opacity: 1;
+}
+
+.banner>img:active{
+    filter: brightness(1.5);
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0px 10%;
+    width: 80%;
+    padding: 10px 0px;
+}
+
+.categoria{
+    margin: 1%;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.categoria div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.categoria img{
+    margin-top: 10px;
+    width: 50px;
+}
+.categoria label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.peliculas{
+    border-radius: 15px 0px 0px 0px;
+    background-color: #1669ab;
+}
+
+.peliculas:hover{
+    background-color: rgb(125, 132, 255);
+}
+
+.animes{
+    border-radius: 0px 0px 15px 0px;
+    background-color: #1669ab;
+}
+
+.animes:hover{
+    background-color: rgb(184, 120, 236);
+}
+
+.videojuegos{
+    border-radius: 0px 0px 0px 15px;
+    background-color: #1669ab;
+}
+
+.videojuegos:hover{
+    background-color: rgb(255, 182, 122);
+}
+
+.libros{
+    border-radius: 0px 15px 0px 0px;
+    background-color: #1669ab;
+}
+
+.libros:hover{
+    background-color: rgb(118, 202, 135);
+}
+
+.series{
+    background-color: #1669ab;
+}
+
+.series:hover{
+    background-color: rgb(255, 125, 125);
+}
+
+.comics{
+    background-color: #1669ab;
+}
+
+.comics:hover{
+    background-color: rgb(102, 204, 195);
+}
+
+
+
+/*--------LISTAS--------*/
+
+#listasActual{
+    padding: 0 25px;
+}
+
+.plus{
+    height: 28px;
+    margin: 15px 5px 0px 0px;
+}
+
+.botonCrear label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mainLista{
+    margin: 3px 0 15px 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.peliculasList {
+    background-color: rgb(125, 132, 255);
+}
+
+.seriesList {
+    background-color: rgb(255, 125, 125);
+}
+
+.librosList {
+    background-color: rgb(118, 202, 135);
+}
+
+.videojuegosList {
+    background-color: rgb(255, 182, 122);
+}
+
+.comicsList {
+    background-color: rgb(102, 204, 195);
+}
+
+.animesList {
+    background-color: rgb(184, 120, 236);
+}
+
+.category{
+    margin-left: 7px;
+}
+
+.peliculasListC {
+    color: rgb(125, 132, 255);
+}
+
+.seriesListC {
+    color: rgb(255, 125, 125);
+}
+
+.librosListC {
+    color: rgb(118, 202, 135);
+}
+
+.videojuegosListC {
+    color: rgb(255, 182, 122);
+}
+
+.comicsListC {
+    color: rgb(102, 204, 195);
+}
+
+.animesListC {
+    color: rgb(184, 120, 236);
+}
+
+.newColor{
+    color: #ffffff;
+}
+
+.botonCrear{
+    background-color: #ffffff;
+    margin: 3px 0 15px 0;
+    height: 60px;
+    color: #1669ab;
+    font-weight: 900;
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.botonCrear:hover{
+    background-color: #5EB8FF;
+    color: #FFFFFF;
+
+}
+
+.botonCrear:active{
+    background-color: rgb(49, 159, 243);
+
+}
+
+.listasActual{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+
+.animate {
+    animation: animatezoom 0.2s;
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.animateAppear {
+    animation: animateAppear 0.5s;
+}
+
+@keyframes animateAppear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.x{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.x:hover{
+    filter: brightness(1.5);
+}
+
+.x:active{
+    filter: brightness(0.8);
+}
+
+.Lista{
+background-size: cover;
+background-position: center;
+border:3px solid rgba(22,106,171,1);
+/*background-color: #5EB8FF;*/
+background-image:url('../imgFront/backOWN.png');
+
+border-radius: 15px;
+margin-bottom: 10px;
+padding: 0px;
+cursor: pointer;
+
+transition: ease-in-out 0.2s;
+}
+.Lista:hover{
+    box-shadow: inset 0px 0px 0px 3px rgba(22,106,171,1);
+}
+
+.Lista img{
+    width: 55px;
+    height: 55px;
+    margin-right: 20px;
+}
+
+.ListaAjena{
+    background-size: cover;
+    background-position: center;
+    border:3px solid rgba(22,106,171,1);
+    /*background-color: #5EB8FF;*/
+    background-image:url('../imgFront/backOWN.png');
+    
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 0px;
+    
+}
+ 
+.ListaAjena img{
+    width: 55px;
+    height: 55px;
+    margin-right: 20px;
+}
+
+.textLista{
+    width: fit-content;
+    background-color: rgba(255,255,255,0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin:20px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 15px;
+}
+
+.textList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.nombreLista{
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nombreCategoria{
+    font-weight: 600;
+    font-size: 15px;
+    font-style: italic;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.lockIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    right: 0;
+    z-index: 20;
+    padding: 5px 10px 2px 10px;
+    margin: 0 15px 0 570px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 25px 25px 0 0;
+}
+
+.imagenUnLock, .imagenLock{
+     width: 25px;
+     height: 25px;
+     cursor: pointer;
+ }
+
+.imagenUnLock:hover{
+    filter: brightness(0.7);
+}
+
+.imagenLock:hover{
+    filter: brightness(1.5);
+}
+
+/*-----------MOSTRAR LISTA--------------*/
+
+.contenidoLista{
+    padding: 25px;
+}
+
+.botonesCabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.back{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #1669ab;
+    margin-right: 220px;
+    width: 95px;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.back:hover{
+    background-color: #5EB8FF;
+}
+
+.back:active{
+    background-color: #004C8A;
+}
+
+.back>img{
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px 10px 12px;
+}
+
+.back>label{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.editLista{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #16AB4A;
+    width: 145px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.editLista:hover{
+    background-color: #34E025;
+}
+
+.editLista:active{
+    background-color: #0E8A00;
+}
+
+.editLista>img{
+    width: 20px;
+    height: 20px;
+    margin: 10px 8px 10px 15px;
+}
+
+.editLista>label{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.deleteLista{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #AB1618;
+    margin: 0px 0px 0px 15px;
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.deleteLista:hover{
+    background-color: #FF5E61;
+}
+
+.deleteLista:active{
+    background-color: #8A0002;
+}
+
+.deleteLista>img{
+    width: 20px;
+    height: 20px;
+    margin: 10px 8px 10px 12px;
+}
+
+.deleteLista>label{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/*-------------MOSTRAR RESENNA----------------*/
+
+.ListaResenna{
+    width: 595px;
+    margin: 10px 0px 50px -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listaResennaInt{
+    width: 595px;
+    height: 65px;
+    border-radius: 100px;
+    margin: 0px 0px 5px -10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imageResenna{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 0px 0 10px -35px;
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #ffffff;
+    background-color: #B9DBF2;
+    z-index: 3;
+}
+
+.textResenna{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 10px;
+    background-color: #ffffff;
+}
+
+.imgRes>img{
+    position: relative;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.nombreResenna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #166AAB;
+    width: 415px;
+}
+
+.imgRes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgRes>img:hover{
+    filter: brightness(1.5);
+}
+
+.imgRes>img:active{
+    filter: brightness(0.8);
+}
+
+.columnLike{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35px;
+    margin-right: 15px;
+    padding-top: 5px;
+}
+
+.columnLike div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+.numUnLikes{
+    color: #555555;
+}
+
+.numLikes{
+    color: #FF4951;
+    font-weight: bold;
+}
+
+.imgResLike, .imgResUnLike{
+    cursor: pointer;
+    margin-left: 7px;
+}
+
+.imgResLike:hover{
+    filter: saturate(0.7);
+}
+
+.imgResUnLike{
+    filter: saturate(0);
+}
+
+.imgResUnLike:hover{
+    filter: saturate(0.5);
+}
+
+.columnLike>img{
+    width: 20px;
+    height: 20px;
+}
+
+.ampliacionRes{
+    margin: -5px 0 0 10px;
+    width: 540px;
+    border-radius: 0 0 15px 15px;
+    background-color: #F0F7FC;
+}
+
+.botElRes{
+    width: 150px;
+    height: 34px;
+    background-color: #AB1618;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 0 0 10px 0;
+}
+
+.botElRes:hover{
+    background-color: #FF5E61;
+}
+
+.botElRes:active{
+    background-color: #8A0002;
+}
+
+.botElRes label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.botElRes img{
+    width: 18px;
+    height: 18px;
+    margin: 8px 5px 0 0px;
+}
+
+.resennaText{
+    margin: 15px 15px 5px 80px;
+    font-style: italic;
+}
+
+.positionRowMid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*----- CONFIRMACION ELIMINAR LISTA-------*/
+
+#backEliminarLista, #backEliminarResenna{
+    display: none;
+    position: fixed;
+    z-index: 120;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.confirmacionEliminarLista{
+    position: relative;
+    margin: 45px auto;
+    z-index: 100;
+    transition: 0.3s;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 25px;
+    width: 450px;
+    height: 150px;
+    background-color: #B9DBF2;
+}
+
+.confirmacionEliminarLista>label{
+    color: #1669AB;
+    font-size: 22px;
+    font-weight: 600;
+    width: 450px;;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 32px;
+    margin: 0px 0px 15px 0px;
+}
+
+.opcionesEliminar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.opcionesEliminar img{
+    width: 30px;
+    height: 30px;
+    margin: 3px 0px 0px 10px;
+}
+
+.yes{
+    background-color: #16AB4A;
+    width: 40%;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.yes:hover{
+    background-color: #34E025;
+}
+
+.yes:active{
+    background-color: #0E8A00;
+}
+
+.no{
+    background-color: #AB1618;
+    width: 40%;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.no:hover{
+    background-color: #FF5E61;
+}
+
+.no:active{
+    background-color: #8A0002;
+}
+
+.yes>label, .no>label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 65px;
+    cursor: pointer;
+}
+
+/*-----CREAR LISTA------*/
+#CajaFormu{
+    
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+}
+.botlog{
+    color: #ffffff;
+    background-color:#1669ab;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 20px 0 0px 0px;
+    border: none;
+}
+.botlog:hover{
+    background-color: #5EB8FF;
+    transition: all ease 0.1s;
+    color: #ffffff;
+    border: none;
+}
+
+.botlog:active{
+    background-color: rgb(49, 159, 243);
+}
+
+#formulariolista{
+display: flex;
+flex-direction: column;
+
+}
+
+#formulariolista input,select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: auto;
+    
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#AbrirCrearLista{
+display: none;
+}
+
+/*---------EDITAR LISTA---------*/
+
+.ImagenEditar{
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+
+/*-----RESEÑA------*/
+#formularioResenna{
+    display: flex;
+    flex-direction: column;
+}
+#formularioResenna input,select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: auto;
+    
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#CrearResenna{
+    display: none;
+    position: fixed;
+    z-index: 120;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 30px;
+}
+
+/*----------ESTRELLAS--------------*/
+
+.rate {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    height: 46px;
+    padding: 0 10px;
+    width: 450px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/*------------------ESTRELLAS MOSTRAR------------------*/
+
+.valorationRes{
+    color: #ffc700; 
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+              
+/*-------------MOSTRAR LISTA RESEÑA-----------------*/
+
+#containerEntradas{
+    margin: -10px auto 20px auto;
+    width: 85%;
+    border-radius: 0px 0px 15px 15px;
+    background-color: rgba(255,255,255,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.crearEntrada{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 625px;
+    height: 45px;
+    margin:25px 0px 30px -40px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    color: #1669ab;
+    font-weight: 900;
+    font-size: 20px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.crearEntrada>label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.plusEnt{
+    width: 24px;
+    height: 24px;
+    margin: 11px 7px 0 0;
+}
+
+.crearEntrada:hover{
+    background-color: #5EB8FF;
+    color: #FFFFFF;
+
+}
+
+.crearEntrada:active{
+    background-color: rgb(49, 159, 243);
+
+}
+
+
+/*-----EDITAR PERFIL------*/
+
+.titlePopUp{
+    color: #166AAB;
+    font-size: 25px;
+    font-weight: 700;
+    width: 450px;
+    margin: 0px 0px 20px 20px;
+}
+
+#backEd{
+    display: none;
+    position: fixed;
+    z-index: 120;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+#EditPerfil{
+    margin: auto;
+    width: 450px;
+    height: auto;
+    background-color: #B9DBF2;
+    z-index: 100;
+    transition: 0.3s;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 25px;
+    padding: 25px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#EditPerfil input,select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: auto;
+    
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.backForms{
+    background-color: #F0F7FC;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.labelPopUp{
+    color: #1669ab;
+    font-size: 18px;
+    font-weight: 600;
+    width: 450px;
+    margin: 10px 0px 10px 15px;
+    font-style: italic;
+}
+
+.formEd{
+    position: relative;
+    margin: auto;
+    width: 450px;
+    height: auto;
+}
+
+#xEd{
+    margin: -13px;
+}
+
+#formularioUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*--------------NUEVA LISTA------------------*/
+#CrearLista{
+    display: none;
+    position: fixed;
+    z-index: 120;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 30px;
+}
+
+#nuevaCajaFormu{
+    margin: auto;
+    width: 450px;
+    height: auto;
+    background-color: #B9DBF2;
+    z-index: 100;
+    transition: 0.3s;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 25px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*-------------BUSCAR USUARIOS--------------*/
+
+#buscarUsers>label{
+    margin: 25px 25px 0px 25px;
+    height: 80px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 25px;
+    background-color: #166AAB;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*---------------BUSQUEDA--------------*/
+
+.busqueda{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#formBuscar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.buscar{
+    outline: none;
+    width: 400px;
+    height: 40px;
+    border-radius: 100px 0px 0px 100px;
+    font-size: 15px;
+    font-style: italic;
+    background-color: #ffffff;
+    background-image: url('../imgFront/lupamini.png');
+    background-position: 12px 10px;
+    background-repeat: no-repeat;
+    padding: 2px 0px 0px 45px;
+    border: 1px solid #ccc;
+}
+.botBusqueda{
+    background-color: #166AAB;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 1px 5px 0px 0px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 0px 100px 100px 0px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.botBusqueda:hover{
+    background-color: #5EB8FF;
+}
+
+.botBusqueda:active{
+    background-color: rgb(49, 159, 243);
+}
+
+.buscarBox{
+    height: 60px;
+    margin: 15px 25px 20px 25px;
+    background-color: #F0F7FC;
+    border-radius: 15px;
+}
+
+
+.contenidoUsers{
+    width: 685px;
+    height: 100%;
+    cursor: pointer ;
+}
+
+.contenidoUsers label{
+    cursor: pointer ;
+}
+
+.mensajeInfo{
+    color: #1669AB;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*--------------CRONOLOGIA------------------------*/
+
+#cronologia{
+    padding: 25px;
+}
+
+/*-------------------PERFILES DE USERS ---------------*/
+.contenedorPadding{
+    padding: 25px;
+}
+
+#listasPerfilUsuario{
+    padding: 25px;
+}
+
+.botonesCabeceraUser{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 25px 25px 0 25px;
+}
+
+.followUser{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #A4A545;
+    margin: 0px 0px 0px 165px;
+    
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.followUser:hover{
+    background-color: rgb(206, 209, 4);
+}
+
+.followUser:active{
+    background-color: #838332;
+}
+
+.followUser>img{
+    width: 20px;
+    height: 20px;
+    margin: 10px 8px 10px 20px;
+}
+
+.followUser>label{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.unfollowUser{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgb(206, 209, 4);
+    margin: 0px 0px 0px 165px;
+    
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.unfollowUser:hover{
+    background-color: #A4A545;
+}
+
+.unfollowUser:active{
+    background-color: #838332;
+}
+
+.unfollowUser>img{
+    width: 20px;
+    height: 20px;
+    margin: 10px 8px 10px 20px;
+}
+
+.unfollowUser>label{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+/*----------------GENERAL-----------------*/
+
+.simpleButton{
+    background-color: #1669AB;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px;
+    margin: 30px 0px 20px 0px;
+}
+
+.simpleButton img{
+    width: 20px;
+    height: 20px;
+    margin: -2px 0 0 12px;
+}
+
+/*-------------ELIMINAR USER ADMIN---------------*/
+
+.eliminarUserAdmin{
+    background-color: #AB1618;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    margin: -25px 200px 15px 200px;
+    border-radius: 0 0 15px 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.eliminarUserAdmin img{
+    height: 20px;
+    width: 20px; 
+    margin: -2px 0 0 5px;
+}
+
+.eliminarUserAdmin label{
+    cursor: pointer;
+}
+
+.eliminarUserAdmin:hover{
+    background-color: #FF5E61;
+}
+
+.eliminarUserAdmin:active{
+    background-color: #8A0002;
+}
